@@ -153,7 +153,7 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 
 "------------------------------------------------------------
- " backup
+" backup
 set backup
 set backupdir=~/.vim/backup
 set swapfile
@@ -161,4 +161,6 @@ set directory=~/.vim/swap
 
 
 "------------------------------------------------------------
+" Minimal number of screen lines to keep above and below the cursor
+set scrolloff=5
 
