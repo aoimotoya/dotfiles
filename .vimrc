@@ -162,5 +162,5 @@ set directory=~/.vim/swap
 
 "------------------------------------------------------------
 " Minimal number of screen lines to keep above and below the cursor
-set scrolloff=5
+set scrolloff=3
 
