@@ -1,0 +1,5 @@
+ignorekeys clear
+ignorekeys add mail\\.google\\.com
+ignorekeys add www\\.google\\.com/calendar
+ignorekeys add docs\\.google\\.com
+
