@@ -25,20 +25,6 @@ export PATH=$PATH:/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin
 #
 autoload colors
 colors
-#case ${UID} in
-#0)
-#    PROMPT="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]') %B%{${fg[red]}%}%/#%{${reset_color}%}%b "
-#    PROMPT2="%B%{${fg[red]}%}%_#%{${reset_color}%}%b "
-#    SPROMPT="%B%{${fg[red]}%}%r is correct? [n,y,a,e]:%{${reset_color}%}%b "
-#    ;;
-#*)
-#    PROMPT="%{${fg[red]}%}%/%%%{${reset_color}%} "
-#    PROMPT2="%{${fg[red]}%}%_%%%{${reset_color}%} "
-#    SPROMPT="%{${fg[red]}%}%r is correct? [n,y,a,e]:%{${reset_color}%} "
-#    [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
-#        PROMPT="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]') ${PROMPT}"
-#    ;;
-#esac
 RPROMPT='[%~]'
 PROMPT=$'%n@%m%# '
 
@@ -114,12 +100,6 @@ compinit
 autoload zed
 
 
-## Prediction configuration
-#
-#autoload predict-on
-#predict-off
-
-
 ## Alias configuration
 #
 # expand aliases before completing
@@ -154,18 +134,6 @@ xterm|xterm-color|kterm|kterm-color)
     }
     ;;
 esac
-
-
-## rbenv
-#
-#export RBENV_ROOT=/usr/local/rbenv
-#export PATH="$RBENV_ROOT/bin:$PATH"
-#eval "$(rbenv init -)"
-
-
-## glob
-#
-# setopt nonomatch
 
 
 ## load user .zshrc configuration file
