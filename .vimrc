@@ -15,6 +15,10 @@ syntax on
 set noundofile
 
 "------------------------------------------------------------
+" Must have options {{{1
+"
+" These are highly recommended options.
+
 " One of the most important options to activate. Allows you to switch from an
 " unsaved buffer without saving it first. Also allows you to keep an undo
 " history for multiple files. Vim will complain if you try to quit without
